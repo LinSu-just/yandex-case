@@ -268,3 +268,67 @@
       .facts{padding:12px}
       .question{padding:18px}
     }
+
+    /* Fluid desktop scale: laptops, Full HD and larger monitors */
+    @media(min-width:981px){
+      .wrap{width:min(1360px,calc(100% - 64px))}
+      .top{
+        width:min(1400px,calc(100% - 40px));
+        height:clamp(68px,4.6vw,82px);
+        padding-inline:clamp(24px,2.4vw,38px);
+      }
+      .logo{min-width:clamp(175px,14vw,235px);font-size:clamp(23px,1.65vw,29px)}
+      .nav{gap:clamp(30px,3vw,52px);font-size:clamp(14px,1vw,17px)}
+      .avatar{width:clamp(42px,3.2vw,52px);height:clamp(42px,3.2vw,52px)}
+
+      .hero{
+        height:clamp(540px,38vw,680px);
+        margin-top:24px;
+        padding:clamp(72px,6vw,105px) clamp(58px,6vw,96px);
+        background-position:center,calc(100% + 25px) center;
+      }
+      .hero h1{font-size:clamp(55px,4.25vw,76px);letter-spacing:-.035em}
+      .hero .lead{max-width:590px;font-size:clamp(24px,1.8vw,31px)}
+      .hero p{max-width:610px;font-size:clamp(15px,1.08vw,18px)}
+      .hero .btn{min-width:clamp(205px,16vw,255px);min-height:clamp(54px,4vw,64px);font-size:clamp(17px,1.15vw,20px)}
+
+      .facts{
+        width:calc(100% - clamp(78px,7vw,120px));
+        margin-top:-82px;
+        padding:clamp(27px,2.3vw,38px);
+      }
+      .fact{padding-inline:clamp(22px,2.5vw,38px);font-size:clamp(14px,1vw,17px)}
+      .fact strong{font-size:clamp(15px,1.1vw,18px)}
+      .fact-icon{width:clamp(22px,1.7vw,28px);height:clamp(22px,1.7vw,28px);flex-basis:auto}
+
+      section{padding-top:clamp(58px,5vw,82px)}
+      h2{font-size:clamp(38px,3vw,50px);margin-bottom:clamp(28px,2.4vw,38px)}
+
+      .benefits{gap:clamp(18px,1.8vw,28px)}
+      .card{min-height:clamp(390px,29vw,455px);padding:clamp(24px,2vw,32px)}
+      .card .art{width:clamp(76px,5.5vw,88px);height:clamp(76px,5.5vw,88px);flex-basis:clamp(76px,5.5vw,88px)}
+      .card h3{font-size:clamp(22px,1.65vw,27px)}
+      .card p{font-size:clamp(15px,1.08vw,18px);line-height:1.35}
+
+      .speakers{gap:clamp(18px,2vw,30px)}
+      .speaker{min-height:clamp(250px,19vw,300px);padding:clamp(22px,2vw,30px);grid-template-columns:clamp(105px,9vw,140px) 1fr}
+      .speaker img{width:clamp(105px,9vw,140px);height:clamp(132px,11vw,170px)}
+      .speaker h3{font-size:clamp(19px,1.45vw,24px)}
+      .speaker small,.talk{font-size:clamp(11px,.9vw,14px)}
+
+      .slot{min-height:clamp(62px,4.7vw,76px);grid-template-columns:clamp(155px,13vw,210px) 1fr}
+      .slot time{font-size:clamp(15px,1.2vw,19px)}
+      .slot span{font-size:clamp(14px,1.05vw,17px)}
+      .place{font-size:clamp(15px,1.25vw,20px)}
+
+      .signup{width:100%;max-width:none;min-height:clamp(520px,39vw,650px);padding:clamp(48px,4vw,68px)}
+      .signup>h2{font-size:clamp(45px,3.6vw,60px)}
+      .signup-copy{font-size:clamp(18px,1.35vw,22px)}
+      .signup-paw{width:clamp(680px,52vw,850px)!important}
+
+      #faq h2{font-size:clamp(34px,2.5vw,44px)}
+      .faq summary{font-size:clamp(14px,1.05vw,17px)}
+      .faq p{font-size:clamp(13px,.95vw,16px)}
+      .question{max-width:none;min-height:clamp(340px,25vw,410px);padding-right:clamp(430px,35vw,560px)}
+      .question-dog{width:clamp(430px,35vw,560px)}
+    }
